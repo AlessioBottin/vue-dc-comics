@@ -104,11 +104,10 @@ header {
     }
 
     .header-bottom {
-        height: 110px;
+        height: 115px;
         background-color: white;
 
         .container {
-            padding: 0 20px;
             display: flex;
             justify-content: space-between;
 
@@ -135,6 +134,10 @@ header {
                     &.active {
                         border-bottom: 5px solid $brand_primary_color;
                         color: $brand_primary_color;
+                    }
+
+                    a {
+                        line-height: 105px;
                     }
                 }
             }
