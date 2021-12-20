@@ -9,18 +9,22 @@
     </main>
 
     <InfoFooter />
+
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
 import InfoFooter from "./components/InfoFooter.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
     Header,
     InfoFooter,
+    Footer,
   },
 };
 </script>
