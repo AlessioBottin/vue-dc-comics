@@ -4,12 +4,12 @@
         <a href="#">
             <!-- Thumbnail  -->
             <div class="thumbnail">
-                <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="">
+                <img :src="comicsObject.thumb" :alt="comicsObject.series">
             </div>
 
             <!-- Comic Name  -->
             <div class="comic-name">
-                action comics
+                {{ comicsObject.series }}
             </div>
         </a>
 
@@ -19,6 +19,7 @@
 <script>
 export default {
     name: 'SingleComic',
+    props: ['comicsObject'],
 }
 </script>
 

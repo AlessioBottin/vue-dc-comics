@@ -3,14 +3,9 @@
         <div class="container">
             <div class="comic-list-container">
 
-                <SingleComic />
-                <SingleComic />
-                <SingleComic />
-                <SingleComic />
-                <SingleComic />
-                <SingleComic />
-                <SingleComic />
-                <SingleComic />
+                <SingleComic v-for="(comic, index) in comics" :key="index" :comicsObject="comic" />
+
+                <a href="#" class="btn btn-wide btn-blue">load more</a>
 
             </div>
         </div>
@@ -119,6 +114,10 @@ export default {
             padding: 50px 0px 20px;
             display: flex;
             flex-wrap: wrap;
+
+            a {
+                margin: auto;
+            }
         }
     }
 }
