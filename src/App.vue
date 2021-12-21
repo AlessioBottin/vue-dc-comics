@@ -11,6 +11,7 @@
     <PreFooter />
 
     <Footer />
+    <SocialFooter />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import Banner from "./components/Banner.vue";
 import ComicsList from "./components/ComicsList.vue";
 import PreFooter from "./components/PreFooter.vue";
 import Footer from "./components/Footer.vue";
+import SocialFooter from "./components/SocialFooter.vue";
 
 export default {
   name: "App",
@@ -29,6 +31,7 @@ export default {
     ComicsList,
     PreFooter,
     Footer,
+    SocialFooter,
   },
 };
 </script>

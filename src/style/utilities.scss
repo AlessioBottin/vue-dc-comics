@@ -9,14 +9,20 @@
 .btn {
     display: inline-block;
     text-transform: uppercase;
-    border: 5px solid $brand_primary_color;
+    border: 3px solid $brand_primary_color;
     font-weight: bold;
+    color: white;
 
+    // Color 
     &-blue {
         background-color: $brand_primary_color;
-        color: white;
     }
 
+    &-transparent {
+        background-color: none;
+    }
+
+    // Dimensions 
     &-wide {
         padding: 5px 30px;
         font-size: 15px;
