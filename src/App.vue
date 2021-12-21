@@ -3,12 +3,12 @@
     <Header />
     
     <main>
-      <div class="container">
-        content
-      </div>
+      <Banner />
+
+      <ComicsList />
     </main>
 
-    <InfoFooter />
+    <PreFooter />
 
     <Footer />
   </div>
@@ -16,14 +16,18 @@
 
 <script>
 import Header from "./components/Header.vue";
-import InfoFooter from "./components/InfoFooter.vue";
+import Banner from "./components/Banner.vue";
+import ComicsList from "./components/ComicsList.vue";
+import PreFooter from "./components/PreFooter.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
     Header,
-    InfoFooter,
+    Banner,
+    ComicsList,
+    PreFooter,
     Footer,
   },
 };
@@ -34,9 +38,4 @@ export default {
 @import './style/utilities';
 @import './style/variables';
 
-main {
-  background-color: #1c1c1c;
-  height: 200px;
-  color: white;
-}
 </style>

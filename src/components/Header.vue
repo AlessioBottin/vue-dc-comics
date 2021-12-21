@@ -1,10 +1,6 @@
 <template>
-    <header>
-        <!-- Top  -->
-        <div class="header-top"></div>
-        
-        <!-- Bottom  -->
-        <div class="header-bottom">
+    <header>       
+        <div class="header-container">
             <div class="container">
 
                 <!-- logo  -->
@@ -98,13 +94,7 @@ export default {
 header {
     width: 100%;
 
-    .header-top {
-        height: 50px;
-        background-color: black;
-    }
-
-    .header-bottom {
-        height: 115px;
+    .header-container {
         background-color: white;
 
         .container {
@@ -138,6 +128,7 @@ header {
 
                     a {
                         line-height: 105px;
+                        display: inline-block;
                     }
                 }
             }

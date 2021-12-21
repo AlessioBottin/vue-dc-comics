@@ -1,7 +1,7 @@
 <template>
-    <div class="info-footer">
+    <div class="pre-footer">
         <div class="container">
-            <div class="content-container">
+            <div class="pre-footer-container">
                 <div 
                     class="item-box"
                     v-for="(item, index) in items"
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-    name: "InfoFooter",
+    name: "PreFooter",
     data: function() {
         return {
             items: [
@@ -55,7 +55,7 @@ export default {
 <style lang="scss" scoped>
 @import '../style/variables';
 
-.info-footer {
+.pre-footer {
     background-color: $brand_primary_color;
     color: white;
     padding: 50px 0px;
@@ -63,7 +63,7 @@ export default {
     font-size: 15px;
 
     .container {
-        .content-container {
+        .pre-footer-container {
             display: flex;
             justify-content: space-between;
             padding: 0 30px;
